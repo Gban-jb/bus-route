@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "Token Transit",
+    "slug": "token-transit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#009CD8"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sijan.tokentransit",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to show nearby bus routes and stops",
+        "NSLocationAlwaysUsageDescription": "This app uses your location to show nearby bus routes and stops",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app uses your location to show nearby bus routes and stops"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#009CD8"
+      },
+      "package": "com.sijan.tokentransit",
+      "softwareKeyboardLayoutMode": "pan",
+      "navigationBarColor": "transparent",
+      "statusBarTranslucent": true,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "753476a8-21f1-4c46-9067-23724cc2fdb5"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/753476a8-21f1-4c46-9067-23724cc2fdb5"
+    },
+    "newArchEnabled": true
+  }
+}
